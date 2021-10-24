@@ -3,67 +3,18 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-
+// telling the file where to look for what we're importing
+const authEvents = require('./events')
 $(() => {
   // your JS code goes here
+
   $('#sign-up-form').on('submit', authEvents.onSignUp)
   $('#log-in-form').on('submit', authEvents.onSignIn)
-  $('#sign-out').on('submit', authEvents.onSignOut)
-  $('.game--restart').hide()
-  $('#after-sign-in').hide()
+  $('#sign-out').on('click', authEvents.onSignOut)
 })
-const { apiUrl } = require('./config')
-const getFormFields = require('../lib/get-form-fields')
-const api = require('./api')
-const ui = require('./ui')
-const authEvents = require('./events')
-
-const onSignUp = function (event) {
-  event.preventDefault()
-  const form = event.target
-  const formData = getFormFields(form)
-  api.signUp(formData).then(ui.signUpSuccess).catch(ui.signUpFailure)
-}
-
-const onSignIn = function (event) {
-  event.preventDefault()
-  const form = event.target
-  const formData = getFormFields(form)
-  api.signIn(formData).then(ui.signInSuccess).catch(ui.signInFailure)
-}
-
-const onSignOut = function () {
-  api.signOut().then(ui.signOutSuccess).catch(ui.signOutFailure)
-}
-
-// let
-
-// const userMove = function () {
-
-// }
-
-module.exports = {
-  onSignUp,
-  onSignIn,
-  onSignOut
-}
-
-// sign up message
-
-function logSubmit(event) {
-  log.textContent = 'You have created an account!'
-  event.preventDefault()
-}
-
-const form = document.getElementById('sign-up-form')
-form.addEventListener('submit', myFunction)
-
-function myFunction () {
-  alert('You are now registered!')
-}
-
 // game JS
 // declare variables
+
 
 const statusDisplay = document.querySelector('.game--status')
 
@@ -72,8 +23,6 @@ let gameActive = true
 let currentPlayer = 'X'
 // store game state to track clicked cells and validate game
 let gameState = ['', '', '', '', '', '', '', '', '']
-
-
 
 // message variables
 const winningMessage = () => `Player ${currentPlayer} has won!`

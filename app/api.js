@@ -1,3 +1,7 @@
+'use strict'
+
+const { apiUrl } = require('./config')
+
 const config = require('../app/config')
 const store = require('../app/store')
 const signUp = (formData) => {
@@ -15,7 +19,7 @@ const signIn = (formData) => {
   })
 }
 
-const signOut = (formData) => {
+const signOut = function () {
   return $.ajax({
     url: `${config.apiUrl}/sign-out`,
     method: 'DELETE',

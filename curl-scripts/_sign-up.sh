@@ -1,14 +1,13 @@
 curl "https://tic-tac-toe-api-production.herokuapp.com/sign-up" \
     --include \
     --request POST \
-    --body "credentials" \
-    --header "" \
+    --header "Content-Type: application/json" \
     --data '{
 
         "credentials": {
-        "email": "an example email address",
-        "password": "an example password",
-        "password_confirmation": "an example password"
+        "email": "'"${EMAIL}"'",
+        "password": "'"${PASSWORD}"'"
+        "passwordConfirm": "'"${PASSWORD}"'"
       }
     }'
 

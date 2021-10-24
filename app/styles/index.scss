@@ -16,7 +16,7 @@ h1 {
 body {
   font-family: Arial;
   background-image: url("https://wallpaperaccess.com/full/755385.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
 
@@ -37,6 +37,7 @@ section {
   background-color: white;
   color: rgb(0, 255, 242);
   grid-gap: 3px;
+
 }
 
 .cell {
@@ -176,21 +177,13 @@ label{
 
 
 
-
-
-
-
-
-
-
-
-#reset {
+#game-restart {
   border: 1px solid black;
   padding: 10px 20px; //change this
   font-size: 1rem;
   font-weight: bold;
   background: none;
-  transition: all .2s ease-in-out
+  transition: all .2s ease-in-out;
 }
 
 
@@ -204,17 +197,22 @@ label{
   background: teal
 }
 
-#sign-out {
-   border: 1px solid black;
+#signOut {
+  border: 1px solid black;
   padding: 10px 20px; //change this
   font-size: 10px;
-  font-weight: bold;
-  background: none;
+  background: rgb(207, 207, 207);
   transition: all .2s ease-in-out;
-  margin: 0px;
-  width: 20px;
+  margin: 2x;
+  width: auto;
+  height: auto;
   align-items: center;
   justify-content: center;
   display:flex;
 // place it on top right
+}
+
+
+#after-sign-in {
+  display: none;
 }

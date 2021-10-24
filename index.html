@@ -25,11 +25,11 @@
       <h1>Tic Tac Toe</h1>
       <form>
       <div style="float:right">
-            <button name="sign-out" type="submit" id="signOut" > Sign Out </button>
+            <button name="sign-out" type="submit" id="signOut"> Sign Out </button>
       </div>
       </form>
 
-<span class= "all-forms">
+<span class= "all-forms" id= "before-sign-in">
 <div class="form-container">
       <form id= "sign-up-form" style="border:1px solid black">
         <h2 id="sign-up-title">Sign Up</h2>
@@ -41,7 +41,7 @@
             <input type="text" id="password" name= "credentials[password]" placeholder= "Password" required>
 
             <label for="confirm password">Confirm Password</label>
-            <input type="text" id="passwordConfirm" name= "credentials[passwordConfirm]" placeholder="Confirm Password" required>
+            <input type="text" id="passwordConfirm" name= "credentials[password_confirmation]" placeholder="Confirm Password" required>
 
             <button type="submit" id= "sign-up"> Register</button>
             <p> By creating an account you agree to our Terms & Privacy</p>
@@ -64,7 +64,7 @@
 </span>
 
 <body>
-  <section>
+  <section id= "after-sign-in">
     <div class="game--container">
       <div data-cell-index="0" class="cell"></div>
       <div data-cell-index="1" class="cell"></div>
