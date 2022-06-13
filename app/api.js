@@ -1,7 +1,5 @@
 'use strict'
 
-const { apiUrl } = require('./config')
-
 const config = require('../app/config')
 const store = require('../app/store')
 const signUp = (formData) => {

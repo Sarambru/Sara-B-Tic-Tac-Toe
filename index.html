@@ -2,6 +2,7 @@
 <html>
     <head>
 
+
       <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -16,6 +17,7 @@
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="./app/styles/index.scss">
 
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
@@ -23,11 +25,7 @@
     </head>
     <body>
       <h1>Tic Tac Toe</h1>
-      <form>
-      <div style="float:right">
-            <button name="sign-out" type="submit" id="signOut"> Sign Out </button>
-      </div>
-      </form>
+
 
 <span class= "all-forms" id= "before-sign-in">
 <div class="form-container">
@@ -38,13 +36,13 @@
         <input type="text" id="email" name="credentials[email]" placeholder= "Email" required>
 
            <label for="password">Password</label><br>
-            <input type="text" id="password" name= "credentials[password]" placeholder= "Password" required>
+            <input type="password" id="password" name= "credentials[password]" placeholder= "Password" required>
 
             <label for="confirm password">Confirm Password</label>
-            <input type="text" id="passwordConfirm" name= "credentials[password_confirmation]" placeholder="Confirm Password" required>
+            <input type="password" id="passwordConfirm" name= "credentials[password_confirmation]" placeholder="Confirm Password" required>
 
             <button type="submit" id= "sign-up"> Register</button>
-            <p> By creating an account you agree to our Terms & Privacy</p>
+            <!-- <p>  By creating an account you agree to our Terms & Privacy</p> -->
             </form>
 </div>
 
@@ -55,7 +53,7 @@
     <input type="text" id="email2" name="credentials[email]" placeholder= "Email" required>
 
     <label for="password">Password</label><br>
-    <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password" required>
+    <input type="password" id="sign-in-password" name="credentials[password]" placeholder="Password" required>
 
     <label for="login">Log In </label>
     <input type="submit" id="login">
@@ -65,6 +63,11 @@
 
 <body>
   <section id= "after-sign-in">
+    <form>
+      <div style="float:right">
+        <button name="sign-out" type="submit" id="signOut"> Sign Out </button>
+      </div>
+    </form>
     <div class="game--container">
       <div data-cell-index="0" class="cell"></div>
       <div data-cell-index="1" class="cell"></div>

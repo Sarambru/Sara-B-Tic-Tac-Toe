@@ -46,8 +46,6 @@ function logSubmit(event) {
   event.preventDefault()
 }
 
-
-
 const form = document.getElementById('sign-up-form')
 form.addEventListener('submit', myFunction)
 

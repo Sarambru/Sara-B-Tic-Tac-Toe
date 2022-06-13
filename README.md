@@ -2,9 +2,10 @@
 This applications allow the user to play a game of tic tac toe against themselves. I wanted to give the game a retro 80's inspired vapor-wave aesthetic, and make sure that the player turn and game results are displayed clearly. I wanted the game status to include both who's turn it is as well as the results of the game for a more seamless layout. I hope you enjoy my first in-class project 😊. 
 
 ## 💫 Important Links 💫
-Here is my project wireframe: [Wireframe](https://imgur.com/a/h9iAx3f)
 
-Here is the link to my game: [Tic Tac Toe Game](https://sarambru.github.io/Sara-B-Tic-Tac-Toe/)
+Here is the link to my game site: [Tic Tac Toe Game](https://sarambru.github.io/Sara-B-Tic-Tac-Toe/)
+
+Here is my project wireframe: [Wireframe](https://imgur.com/a/h9iAx3f)
 
 Link to Github Repo: [Github Repo](https://github.com/Sarambru/Sara-B-Tic-Tac-Toe)
 
