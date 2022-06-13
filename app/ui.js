@@ -9,8 +9,6 @@ const signUpSuccess = function (responseData) {
   $('#after-sign-in').show()
   $('#before-sign-in').show()
   $('form').trigger('reset')
-
-
   console.log('responseData is ', responseData)
 }
 
@@ -44,7 +42,7 @@ const signInFailure = function (error) {
   console.error(error)
   $('#before-sign-in').show()
   $('#after-sign-in').hide()
-  $('#signOut').hide();
+  $('#signOut').hide()
 }
 
 const signOutSuccess = function (responseData) {
